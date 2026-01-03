@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Optical Fiber Communication</title>
+    <link rel="stylesheet" href="frames-style.css">
+
+    <script>
+        function loadPage(page) {
+            document.getElementById("content").innerHTML =
+                '<iframe src="' + page + '" frameborder="0"></iframe>';
+        }
+    </script>
+</head>
+
+<body>
+
+<!-- ================= TOP ROW ================= -->
+<div class="top-row">
+
+    <!-- LOGO -->
+    <div class="logo-frame">
+        <img src="images/logo.jpg" alt="Optical Cable Logo">
+    </div>
+
+    <!-- HEADING -->
+    <div class="heading-frame">
+        <h1>Optical Cables</h1>
+    </div>
+
+</div>
+
+<!-- ================= CENTER MENU ================= -->
+<div class="center-row">
+    <h2>Different Types of Optical Cables</h2>
+
+    <a onclick="loadPage('type-1.html')">Modes</a>
+    <a onclick="loadPage('type-2.html')">Index</a>
+    <a onclick="loadPage('type-3.html')">Material</a>
+</div>
+
+<!-- ================= BOTTOM ROW ================= -->
+<div class="bottom-row">
+
+    <!-- LEFT PANEL -->
+    <div class="left-panel">
+        <h3>Optical Fiber Topics</h3>
+
+        <ul>
+            <li><a onclick="loadPage('smfmmf.html')">SMF vs MMF</a></li>
+            <li><a onclick="loadPage('index_fiber.html')">Step Index vs Graded Index</a></li>
+            <li><a onclick="loadPage('material_fiber.html')">Glass vs Plastic Fiber</a></li>
+        </ul>
+    </div>
+
+    <!-- RIGHT CONTENT PANEL -->
+    <div class="right-panel" id="content">
+        <p align="center">
+            👆 Select a topic from the menu to display content here
+        </p>
+    </div>
+
+</div>
+
+</body>
+</html>
